@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 10px 10px 20px 0;
+  margin: 10px 10px 40px 0;
   gap: 10px;
   font-size: 18px;
   border: 1px solid black;
@@ -33,7 +33,4 @@
 .input {
   height: 15px;
   padding: 5px;
-}
-.filter {
-  margin-right: 15px;
 }

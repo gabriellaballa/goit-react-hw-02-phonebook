@@ -60,16 +60,6 @@ class ContactForm extends Component {
         <button className={css.addbtn} type="submit">
           Add Contact
         </button>
-        <label>
-          <span className={css.filter}>Filter by Name:</span>
-          <input
-            className={css.input}
-            type="text"
-            name="filter"
-            value={this.state.filter}
-            onChange={this.handleFilterChange}
-          />
-        </label>
       </form>
     );
   }

@@ -3,11 +3,13 @@ import ContactListItem from 'components/ContactListItem/ContactListItem';
 import style from './ContactList.module.css';
 class ContactList extends Component {
   render() {
-    const { contacts, onDeleteContact } = this.props;
-
+    const { onDeleteContact } = this.props;
+    const filteredContacts = this.props.contacts.filter(contact =>
+      contact.name.toLowerCase().includes(this.props.filter.toLowerCase())
+    );
     return (
       <ol className={style.contacts}>
-        {contacts.map(contact => (
+        {filteredContacts.map(contact => (
           <ContactListItem
             key={contact.id}
             contact={contact}

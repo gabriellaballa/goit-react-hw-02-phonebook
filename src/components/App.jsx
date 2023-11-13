@@ -51,6 +51,16 @@ class App extends Component {
         <h1>Phonebook</h1>
         <div className="addformula">
           <ContactForm onAddContact={this.handleAddContact} />
+          <label className="filterinput">
+            <span className="filtername">Filter by Name:</span>
+            <input
+              className="filter-searchbar"
+              type="text"
+              name="filter"
+              value={this.state.filter}
+              onChange={this.handleFilterChange}
+            />
+          </label>
         </div>
 
         <h2>Contacts:</h2>
